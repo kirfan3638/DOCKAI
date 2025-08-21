@@ -2,5 +2,4 @@
 @tailwind components;
 @tailwind utilities;
 
-body { font-family: system-ui, sans-serif; }
-a { text-decoration: none; }
+body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
