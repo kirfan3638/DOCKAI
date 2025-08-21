@@ -7,9 +7,9 @@ export default function Home() {
           DocIK is your HIPAA-compliant AI assistant for faster, EMR-ready notes — including SOAP, H&P, and discharge summaries.
           Designed by clinicians, for clinicians.
         </p>
-        <button className="bg-blue-600 text-white px-6 py-3 rounded-2xl text-lg shadow-lg hover:bg-blue-700">
+        <a href="/demo" className="bg-blue-600 text-white px-6 py-3 rounded-2xl text-lg shadow-lg hover:bg-blue-700">
           Try DocIK for Free
-        </button>
+        </a>
       </section>
 
       <section className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 py-12">
@@ -44,30 +44,10 @@ export default function Home() {
           method="POST"
           className="space-y-4 text-left max-w-md mx-auto"
         >
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            required
-            className="w-full border border-gray-300 rounded-xl p-3"
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Your Email"
-            required
-            className="w-full border border-gray-300 rounded-xl p-3"
-          />
-          <textarea
-            name="message"
-            placeholder="Optional Message"
-            rows="3"
-            className="w-full border border-gray-300 rounded-xl p-3"
-          />
-          <button
-            type="submit"
-            className="bg-green-600 text-white px-6 py-3 rounded-2xl text-lg shadow-lg hover:bg-green-700 w-full"
-          >
+          <input type="text" name="name" placeholder="Your Name" required className="w-full border border-gray-300 rounded-xl p-3"/>
+          <input type="email" name="email" placeholder="Your Email" required className="w-full border border-gray-300 rounded-xl p-3"/>
+          <textarea name="message" placeholder="Optional Message" rows="3" className="w-full border border-gray-300 rounded-xl p-3"/>
+          <button type="submit" className="bg-green-600 text-white px-6 py-3 rounded-2xl text-lg shadow-lg hover:bg-green-700 w-full">
             Request Early Access
           </button>
         </form>
