@@ -17,7 +17,7 @@ export default function Demo() {
 
 **P:** Admit to telemetry, start aspirin, beta-blocker, obtain troponins, consult cardiology.`);
       setLoading(false);
-    }, 1500);
+    }, 1200);
   };
 
   return (
@@ -30,6 +30,7 @@ export default function Demo() {
         <button
           onClick={generateNote}
           className="bg-blue-600 text-white px-6 py-3 rounded-2xl text-lg shadow-lg hover:bg-blue-700"
+          disabled={loading}
         >
           {loading ? 'Generating...' : 'Generate Note'}
         </button>
